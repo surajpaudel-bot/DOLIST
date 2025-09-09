@@ -17,5 +17,13 @@ const li = document.createElement("li");
 li.textContent=task;
 document.getElementById("tasklist").appendChild(li);
 
+//creating delete button on click
+const deletebtn= document.createElement("button");
+deletebtn.textContent="Delete";
+deletebtn.addEventListener("click",()=>{
+    li.remove();
+});
+li.appendChild(deletebtn)
 })
+
 
