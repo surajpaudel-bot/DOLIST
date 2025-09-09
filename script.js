@@ -11,4 +11,11 @@ addtaskbtn.addEventListener("click",()=>{
     }
     console.log("Task added:", task);
     taskinput.value=""; //clears input after adding 
+
+//creating new list
+const li = document.createElement("li");
+li.textContent=task;
+document.getElementById("tasklist").appendChild(li);
+
 })
+
